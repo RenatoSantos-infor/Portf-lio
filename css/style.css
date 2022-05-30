@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;    
+    
+}
+body{
+    margin: 0;
+    
+    
+}
+header .navbar{  
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 10%;
+    margin-top: 20px;      
+}
+.navbar a{
+    color: #f9004d;
+    text-decoration: none;     
+    padding: 10px 20px;
+    font-weight: bolder;
+ }
+
+.navbar a:hover{
+    color: rgb(12, 12, 12);
+ }
+ 
+ header .logo{
+    margin-right: 50%;
+    color: black;    
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 30px 40px;   
+    font-weight: bold;
+} 
+span{
+	color: #f9004d;
+} 
+.home{
+    margin-left: 10%;
+    margin-right: 10%; 
+    color: black;        
+    max-width: 100%;   
+    display: flex;   
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.home img{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 80%;         
+}
+h1{
+    font-size: 5rem;
+} 
+h4{
+    font-size: 3rem;
+} 
+h4{
+    color: rgb(17, 0, 255);    
+    letter-spacing: 2px;
+    font-size: 2rem;
+} 
+
+.tec {    
+    text-align: center;    
+    margin-top: 80px;    
+    margin-left: 5%;    
+    margin-right: 5%;  
+    margin-bottom: 90px;      
+}
+.card{
+    display: inline-block;    
+    margin: 5%;        
+    
+}
+.card img{
+    width: 100px;    
+    
+}
+.tec h2{     
+    font-size: 50px;    
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 5px;
+    align-items: left;
+    
+}
+.card h3{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.card:hover h3{
+    color: red;
+}
+
+h2{
+    text-align: center;
+    align-items: center;    
+    margin-top: 100px;
+    font-size: 50px;
+
+}
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    max-width: 1000px;  
+    margin: 0 auto; 
+    grid-gap: 20px;     
+    text-align: center;    
+    margin-bottom: 90px;
+}  
+
+.projetos img{
+    width: 300px; 
+    
+}  
+
+footer{
+    margin-top: 100px;
+    height: 120px;
+    text-align: center;    
+    background-color: rgb(166, 169, 177);
+}
+.img-rodape img{
+    
+    padding: 10px;
+    margin: 10px;    
+}
+.rodape{
+    color: black;
+    
+}
+@media screen and (max-width:1024px){
+    .projetos{
+        grid-template-columns: repeat(2, 1fr);  
+    }  
+
+@media screen and (max-width:768px){
+    header .navbar{     
+        display: none;
+        
+    }
+    .home,home-text{
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+    header .logo{
+        margin-top: 0;
+        text-align: center;
+        align-items: center;
+        margin-right: 0;                        
+    }
+    .home-text{
+        display: inline-block;
+        
+    }
+ 
+}
+@media screen and (max-width:630px){
+    .projetos{
+        grid-template-columns: repeat(1, 1fr);  
+    }  
+}
